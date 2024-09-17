@@ -1,0 +1,145 @@
+/* Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Banner section appearance */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(newyorkskyline.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* For the navigation bar at the top of the site */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #cea1dc;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* Content for each section */
+.content {
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e2cee9;
+}
+
+.content h1, h2 {
+    font-size: 60px;
+}
+.container h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* Home Section */
+#Home {
+    padding: 100px 0; /* Add padding for space around the section */
+}
+
+.content-container {
+    width: 85%;
+    margin: 0 auto; /* Center the content on the page */
+}
+
+.container h3,p{
+    color:#fff;
+}
+
+.profile-pic {
+    float: left; /* Float the image to the left */
+    width: 250px; /* Set a smaller size for the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px; /* Add space between the image and the text */
+    border-radius: 10px; /* Optional: Rounded corners for a polished look */
+}
+
+
+.text-wrapper {
+    overflow: hidden; /* Clears the float so text doesn't wrap under the image */
+    text-align: left; /* Align text to the left */
+}
+
+.text-wrapper h1 {
+    font-size: 48px;
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+.text-wrapper p {
+    font-size: 18px;
+    line-height: 1.6; /* Improved readability */
+}
+
+#About {
+    padding: 100px 0; /* Adds space above and below the section */
+    padding-left: 36px;
+    padding-right: 36px;
+    background-color: #000; /* Optional background color for contrast */
+    position: relative;
+    text-align: justify;
+    z-index: 2;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* this line ensures the container clears the floated image*/
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
